@@ -44,9 +44,7 @@ for x in range(settings.GRID_SIZE):
         c.create_btn_object(center_frame)
         c.cell_btn_object.grid(column=x, row=y)
 
-c = Cell(-1, -1)
-c.create_btn_object(top_frame)
-c.cell_btn_object.grid(column=0, row=0)
+Cell.randomize_mines()
 
 # Run the window
 root.mainloop()
